@@ -106,12 +106,8 @@ def initial_transimission(a,ibright):
     init = init/3
     return (init- np.min(init))/(np.max(init)- np.min(init))
 
-def zmMinFilterGray(src, r=7):
-    '''''Minimum filter, r is the filter radius'''
-    return cv2.erode(src,np.ones((2*r-1,2*r-1)))
 
 def guidedfilter(I, p, r, eps):
-    '''''Bootstrap filtering, refer to someone else's code'''
     height, width = I.shape
     m_I = cv2.boxFilter(I, -1, (r,r))
     m_p = cv2.boxFilter(p, -1, (r,r))
@@ -201,10 +197,12 @@ def histogram_equalization(j):
 w=15 #window size
 bi,gi,ri=0,1,2  #renk kanalları index
 print("Resim okunuyor..");
+
 # resmi 3 kanallı numpy dizine çevirmek
 img=cv2.imread("3.png")
 i=np.asarray(img,dtype=np.float64) 
 i=i[:,:,:3]/255
+
 height,width,_ = i.shape
 print('Resim boyutu: (Boy:',height, ', En: ',width, ')')
 if (height > 600 and width >600):
