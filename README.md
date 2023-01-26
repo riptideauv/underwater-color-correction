@@ -20,4 +20,6 @@ bir görüntünün üç renk kanalı arasındaki maksimum yoğunluk farkını d�
 
 ![rectified_bright](https://user-images.githubusercontent.com/120055921/213677998-7135d942-1b59-4d4d-a90f-7802e17bd4bb.jpeg)
 <br>
-<h2> bgsubr() fonksiyonu </h2> 
+<h2> Sonuc </h2> 
+<br>
+![Final_result](https://user-images.githubusercontent.com/120055921/214812005-7d28f402-7fb9-447e-9e18-dae6c1c9ea0e.jpeg)
